@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common'
 import { v4 as uuid } from 'uuid'
-import { Person } from './types/persons'
-import { FifthModuleService } from '../fifth-module/fifth-module.service'
+import { Person } from './types'
+import { ColorModuleService } from '../colors/color-module.service'
 
 let persons: Array<Person> = [
   {
@@ -42,9 +42,9 @@ let persons: Array<Person> = [
 ]
 
 @Injectable()
-export class FourthModuleService {
+export class PersonsModuleService {
   constructor(
-    private readonly FifthModuleService: FifthModuleService
+    private readonly ColorModuleService: ColorModuleService
   ) {
   }
 

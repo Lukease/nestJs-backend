@@ -4,7 +4,7 @@ let colorsArray: Array<string> = ["blue", "green", "red", "yellow", "blue", "red
 const colorsSet = new Set<string>(colorsArray)
 
 @Injectable()
-export class FifthModuleService {
+export class ColorModuleService {
   findByName(favouriteColor: string) {
     if (colorsSet.has(favouriteColor)){
       return favouriteColor
@@ -31,5 +31,4 @@ export class FifthModuleService {
 
     return colorsArray = Array.from(colorsSet)
   }
-
 }

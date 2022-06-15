@@ -3,11 +3,11 @@ import { AppController } from './app.controller'
 import { AppService } from './app.service'
 import { SecondModuleModule } from './modules/second-module'
 import { ThirdModuleModule } from './modules/third-module'
-import { FourthModuleModule } from './modules/fourth-module'
-import { FifthModuleModule } from './modules/fifth-module'
+import { PersonsModuleModule } from './modules/persons'
+import { ColorModuleModule } from './modules/colors'
 
 @Module({
-  imports: [SecondModuleModule, ThirdModuleModule, FourthModuleModule, FifthModuleModule],
+  imports: [SecondModuleModule, ThirdModuleModule, PersonsModuleModule, ColorModuleModule],
   controllers: [AppController],
   providers: [AppService],
 })
