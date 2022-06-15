@@ -1,0 +1,1 @@
+export { FifthModuleModule } from './fifth-module.module'
